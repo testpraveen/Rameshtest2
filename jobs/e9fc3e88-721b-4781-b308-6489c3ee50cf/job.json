@@ -1,0 +1,48 @@
+{
+  "id": "e9fc3e88-721b-4781-b308-6489c3ee50cf",
+  "name": "Mysql_sql",
+  "pipeline_id": "",
+  "type": 1,
+  "source_connector": "mysql_dst1",
+  "destination_connector": "sqlserver_dst",
+  "schedule": {
+    "enabled": false,
+    "cron": ""
+  },
+  "alerts": {
+    "send_email": false,
+    "email_to": "",
+    "email_error_only": false
+  },
+  "properties": {
+    "enable_parallel_processing": false,
+    "worker_pool": 2,
+    "verbosity": 5,
+    "destination_schema": "dbo",
+    "automatic_job_retry": true
+  },
+  "replicate_options": {
+    "replicate_start_date": null,
+    "replicate_interval": 180,
+    "replicate_interval_unit": "days",
+    "snapshot_size": "1000000",
+    "skip_snapshot": "false",
+    "alter_schema": true,
+    "drop_table": false,
+    "truncate_table_data": false,
+    "table_name_prefix": "",
+    "table_name_suffix": "",
+    "continue_on_error": true,
+    "deletion_behavior": "HardDelete",
+    "insert_mode": "FilePerBatch",
+    "auto_truncate_Strings": true,
+    "use_gmt_datetime": false,
+    "command_timeout": 300,
+    "additional_options": null
+  },
+  "events": {
+    "pre_job": "",
+    "post_job": ""
+  },
+  "labels": []
+}

@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "id": 982577771282829313,
+      "job_id": "e9fc3e88-721b-4781-b308-6489c3ee50cf",
+      "query": "REPLICATE [dbo].[employee_details] WITH enableparallelreadpartitioning = 'false', IncrementalCheckColumns = 'last_modified' SELECT * FROM [synctest].[employee_details]",
+      "is_active": true
+    }
+  ]
+}
