@@ -38,7 +38,7 @@
     "auto_truncate_Strings": true,
     "use_gmt_datetime": false,
     "command_timeout": 300,
-    "additional_options": ""
+    "additional_options": null
   },
   "events": {
     "pre_job": "",
